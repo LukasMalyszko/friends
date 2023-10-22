@@ -1,5 +1,4 @@
 <p style="color: green"><%= notice %></p>
-
 <div class="card text-center">
   <div class="card-header">
     <strong><%=  @friend.first_name + " " + @friend.last_name %> </strong>
@@ -15,10 +14,7 @@
     Added 2 days ago
   </div>
 </div>
-   
-
 <div>
-
   <%= link_to "Back to friends", friends_path, class:"btn btn-secondary m-2" %>
   <%= button_to "Destroy this friend", @friend, method: :delete, class:"btn btn-danger m-2" %>
 </div>
